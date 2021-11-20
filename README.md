@@ -2,11 +2,11 @@
 
 A minimalist LaTeX scratch pad with symbol autocompletion and instant previews.
 
-<img width="1035" alt="demo" src="https://user-images.githubusercontent.com/7585078/142719405-34fcbb1e-e621-49c6-a9c2-51b8f057792a.png">
+<img width="1271" alt="demo" src="https://user-images.githubusercontent.com/7585078/142731594-ad408986-bacc-4740-b0e2-69e8792e3a0c.png">
 
 ## Features
 
--   Symbol autocomplete suggestions as you type
+-   Symbol autocompletion as you type
 -   Instant rendered preview, powered by [KaTeX](https://katex.org)
 -   Optional Vim keybindings
 -   Choice of inline or block rendering
