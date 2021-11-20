@@ -1,0 +1,68 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Computer Modern Sans', sans-serif;
+    font-size: 1.1em;
+    font-feature-settings: 'kern' 1;
+    font-kerning: normal;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    background-color: rgb(31, 41, 55);
+    display: flex;
+    padding: 5px 20px;
+    color: white;
+    fill: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(229, 231, 235);
+    padding: 40px 20px 10px;
+    flex-grow: 1;
+}
+
+#editor {
+    height: 300px;
+    width: 100%;
+    max-width: 600px;
+
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    background-color: white;
+}
+
+#mathpreview {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding: 10px;
+    margin-top: 30px;
+
+    width: 100%;
+    max-width: 600px;
+}
+
+#parseErrorMessage {
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(205, 66, 70, 0.1);
+    color: rgb(172, 47, 51);
+}

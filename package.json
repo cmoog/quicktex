@@ -1,0 +1,17 @@
+{
+    "name": "latexpad",
+    "private": true,
+    "scripts": {
+        "dev": "parcel --no-hmr index.html",
+        "build": "parcel build index.html",
+        "fmt": "prettier --write ."
+    },
+    "devDependencies": {
+        "@parcel/transformer-sass": "^2.0.1",
+        "@types/katex": "0.11.1",
+        "katex": "0.15.1",
+        "monaco-editor": "0.28.1",
+        "parcel": "2.0.1",
+        "prettier": "2.4.1"
+    }
+}
