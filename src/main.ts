@@ -1,6 +1,6 @@
 import katex from 'katex'
 import { languages, editor } from 'monaco-editor'
-import completions from './scripts/completions.json'
+import completions from '../scripts/completions.json'
 
 const language = 'latex'
 

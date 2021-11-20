@@ -2,8 +2,8 @@
     "name": "latexpad",
     "private": true,
     "scripts": {
-        "dev": "parcel --no-hmr index.html",
-        "build": "parcel build index.html",
+        "dev": "parcel ./src/index.html",
+        "build": "parcel build ./src/index.html",
         "fmt": "prettier --write ."
     },
     "devDependencies": {
