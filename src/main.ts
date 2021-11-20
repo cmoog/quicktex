@@ -1,9 +1,11 @@
 import katex from 'katex'
 import { languages, editor } from 'monaco-editor'
+
 import { initVimMode } from 'monaco-vim'
 
 import completions from '../scripts/completions.json'
 import { registerOptionsInputs } from './options'
+import languageConfig from './languageConfiguration.json'
 
 const language = 'latex'
 
@@ -68,9 +70,13 @@ function mountEditor() {
         triggerCharacters: ['\\'],
         provideCompletionItems: provideCompletionItems,
     })
+    languages.setLanguageConfiguration(
+        language,
+        languageConfig as unknown as languages.LanguageConfiguration
+    )
 
     const editorDiv = document.getElementById('editor_target')
-    const mathPreview = document.getElementById('mathpreview')
+    const mathPreview = document.getElementById('mathPreview')
 
     const editorInstance = editor.create(editorDiv, {
         language,
@@ -91,7 +97,7 @@ function mountEditor() {
     const errorElementId = 'parseErrorMessage'
     let inlineMode = false
 
-    editorInstance.onDidChangeModelContent((event) => {
+    editorInstance.onDidChangeModelContent(() => {
         try {
             render()
         } catch (e) {

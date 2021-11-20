@@ -10,11 +10,12 @@ A minimalist LaTeX scratch pad with symbol autocompletion and instant previews.
 -   Instant rendered preview, powered by [KaTeX](https://katex.org)
 -   Optional Vim keybindings
 -   Choice of inline or block rendering
+-   Auto closing brackets
 
 ### TODO
 
--   [ ] bracket pairing, better autocomplete sorting
 -   [ ] autocomplete suggestion rendered previews
 -   [ ] syntax highlighting
+-   [ ] better autocomplete sorting
 -   [ ] inline error messages
 -   [ ] shareable links
