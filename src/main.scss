@@ -40,7 +40,7 @@ body {
 #editor {
     height: 300px;
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
 
     padding: 10px;
     border-radius: 4px;
@@ -61,7 +61,9 @@ body {
 
     width: 100%;
     // TODO: fix this, wrap in another container
-    max-width: 600px;
+    max-width: 700px;
+
+    font-size: 20px;
 }
 
 #parseErrorMessage {
@@ -75,7 +77,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    max-width: 620px;
+    max-width: 720px;
     width: 100%;
 
     button,

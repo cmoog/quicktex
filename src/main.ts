@@ -80,7 +80,7 @@ function mountEditor() {
 
     const editorInstance = editor.create(editorDiv, {
         language,
-        fontSize: 16,
+        fontSize: 14,
         minimap: { enabled: false },
     })
 

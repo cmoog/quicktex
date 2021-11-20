@@ -11,6 +11,7 @@ A minimalist LaTeX scratch pad with symbol autocompletion and instant previews.
 -   Optional Vim keybindings
 -   Choice of inline or block rendering
 -   Auto closing brackets
+-   Shareable URLs
 
 ### TODO
 
@@ -18,4 +19,3 @@ A minimalist LaTeX scratch pad with symbol autocompletion and instant previews.
 -   [ ] syntax highlighting
 -   [ ] better autocomplete sorting
 -   [ ] inline error messages
--   [ ] shareable links
