@@ -1,6 +1,9 @@
 import katex from 'katex'
 import { languages, editor } from 'monaco-editor'
+import { initVimMode } from 'monaco-vim'
+
 import completions from '../scripts/completions.json'
+import { registerOptionsInputs } from './options'
 
 const language = 'latex'
 
@@ -75,16 +78,22 @@ function mountEditor() {
         minimap: { enabled: false },
     })
 
+    const render = () => {
+        mathPreview.innerHTML = katex.renderToString(
+            editorInstance.getValue(),
+            {
+                strict: false,
+                displayMode: !inlineMode,
+            }
+        )
+    }
+
     const errorElementId = 'parseErrorMessage'
+    let inlineMode = false
+
     editorInstance.onDidChangeModelContent((event) => {
         try {
-            mathPreview.innerHTML = katex.renderToString(
-                editorInstance.getValue(),
-                {
-                    strict: false,
-                    displayMode: true,
-                }
-            )
+            render()
         } catch (e) {
             // TODO: make this display cleaner, should underline position in text editor
             const existingErr = document.getElementById(errorElementId)
@@ -103,6 +112,23 @@ function mountEditor() {
         }
     })
     editorInstance.setValue('e^{i\\pi} + 1 = 0\n\n\n\n')
+
+    let vimDispose = () => {}
+
+    registerOptionsInputs({
+        vim: (checked) => {
+            if (checked) {
+                const vim = initVimMode(editorInstance, null) // document.getElementById('vimstatus'))
+                vimDispose = () => vim.dispose()
+            } else {
+                vimDispose()
+            }
+        },
+        inline: (checked) => {
+            inlineMode = checked
+            render()
+        },
+    })
 }
 
 window.addEventListener('DOMContentLoaded', () => {

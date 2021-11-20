@@ -23,6 +23,9 @@ body {
     fill: white;
     justify-content: space-between;
     align-items: center;
+    h1 {
+        margin: 0.75rem 0;
+    }
 }
 
 .container {
@@ -57,6 +60,7 @@ body {
     margin-top: 30px;
 
     width: 100%;
+    // TODO: fix this, wrap in another container
     max-width: 600px;
 }
 
@@ -65,4 +69,17 @@ body {
     text-align: center;
     background-color: rgba(205, 66, 70, 0.1);
     color: rgb(172, 47, 51);
+}
+
+.optionsContainer {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#checkboxVimLabel {
+    margin-right: 5px;
 }

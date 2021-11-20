@@ -8,11 +8,20 @@
             href="../node_modules/katex/dist/katex.min.css"
         />
         <link rel="stylesheet" href="./main.scss" />
+        <meta name="author" content="Charlie Moog" />
+        <meta
+            name="keywords"
+            content="LaTeX, Math, KaTeX, Math Graphics, LaTeX Playground, Latex Scratchpad, KaTeX Playground"
+        />
+        <meta
+            name="description"
+            content="A no-frills LaTeX preview editor with symbol autocompletion."
+        />
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@d4bab419235a7ea4a3e8ab7584112ef73e16c1dc/fonts.css"
         />
-        <title>LatexPad</title>
+        <title>LaTeXPad</title>
     </head>
     <body>
         <script type="module" src="main.ts"></script>
@@ -26,8 +35,15 @@
             /></a>
         </div>
         <div class="container">
+            <div class="optionsContainer">
+                <input type="checkbox" id="checkboxVim" name="vim" />
+                <label for="vim" id="checkboxVimLabel">vim keybinds</label>
+                <input type="checkbox" id="checkboxInline" name="inline" />
+                <label for="inline">inline mode</label>
+            </div>
             <div id="editor">
                 <div id="editor_target" style="height: 100%; width: 100%"></div>
+                <div id="vimstatus"></div>
             </div>
             <div id="mathpreview"></div>
             <p>
