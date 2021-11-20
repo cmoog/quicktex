@@ -11,10 +11,9 @@ export function registerShareButton(editorDataGetter: () => string) {
     })
 }
 
-export function popDataFromUrl(): string | null {
+export function extractDataFromUrl(): string | null {
     try {
         const rawHash = window.location.hash
-        clearHash()
         if (rawHash?.length > 0) {
             return decodeURIComponent(rawHash.substring(1))
         }
@@ -25,7 +24,7 @@ export function popDataFromUrl(): string | null {
     }
 }
 
-function clearHash() {
+export function clearHash() {
     const url = new URL(window.location.toString())
     url.hash = ''
     window.history.pushState({}, null, url.toString())

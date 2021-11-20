@@ -5,7 +5,7 @@ import { initVimMode } from 'monaco-vim'
 import completions from '../scripts/completions.json'
 import { registerOptionsInputs } from './options'
 import languageConfig from './languageConfiguration.json'
-import { popDataFromUrl, registerShareButton } from './url'
+import { clearHash, extractDataFromUrl, registerShareButton } from './url'
 
 const language = 'latex'
 
@@ -62,6 +62,7 @@ function trimDollar(str: string): string {
 }
 
 function mountEditor() {
+    let editorDirty = false
     languages.register({ id: language })
 
     // TODO: add latex highlighting
@@ -95,7 +96,15 @@ function mountEditor() {
     const errorElementId = 'parseErrorMessage'
     let inlineMode = false
 
+    const defaultEditorValue = 'e^{i\\pi} + 1 = 0\n\n\n\n'
+    const initialValue = extractDataFromUrl() || defaultEditorValue
+
     editorInstance.onDidChangeModelContent(() => {
+        if (editorInstance.getValue() !== initialValue) {
+            clearHash()
+            editorDirty = true
+        }
+
         try {
             render()
         } catch (e) {
@@ -115,7 +124,7 @@ function mountEditor() {
             }
         }
     })
-    editorInstance.setValue(popDataFromUrl() || 'e^{i\\pi} + 1 = 0\n\n\n\n')
+    editorInstance.setValue(initialValue)
 
     let vimDispose = () => {}
 
@@ -134,6 +143,10 @@ function mountEditor() {
         },
     })
     registerShareButton(() => editorInstance.getValue())
+
+    // warn that editor contents will be reset during reload
+    window.onbeforeunload = () =>
+        editorDirty ? 'The contents of the editor will be lost.' : null
 }
 
 window.addEventListener('DOMContentLoaded', () => {
