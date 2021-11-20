@@ -71,13 +71,23 @@ body {
     color: rgb(172, 47, 51);
 }
 
-.optionsContainer {
+.toolbar {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    max-width: 620px;
     width: 100%;
-    max-width: 600px;
-    justify-content: flex-end;
+
+    button,
+    input {
+        cursor: pointer;
+    }
+}
+
+.optionsContainer {
     align-items: center;
-    margin-bottom: 5px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #checkboxVimLabel {

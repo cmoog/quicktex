@@ -1,11 +1,11 @@
 import katex from 'katex'
 import { languages, editor } from 'monaco-editor'
-
 import { initVimMode } from 'monaco-vim'
 
 import completions from '../scripts/completions.json'
 import { registerOptionsInputs } from './options'
 import languageConfig from './languageConfiguration.json'
+import { popDataFromUrl, registerShareButton } from './url'
 
 const language = 'latex'
 
@@ -85,13 +85,11 @@ function mountEditor() {
     })
 
     const render = () => {
-        mathPreview.innerHTML = katex.renderToString(
-            editorInstance.getValue(),
-            {
-                strict: false,
-                displayMode: !inlineMode,
-            }
-        )
+        const raw = editorInstance.getValue()
+        mathPreview.innerHTML = katex.renderToString(raw, {
+            strict: false,
+            displayMode: !inlineMode,
+        })
     }
 
     const errorElementId = 'parseErrorMessage'
@@ -117,7 +115,7 @@ function mountEditor() {
             }
         }
     })
-    editorInstance.setValue('e^{i\\pi} + 1 = 0\n\n\n\n')
+    editorInstance.setValue(popDataFromUrl() || 'e^{i\\pi} + 1 = 0\n\n\n\n')
 
     let vimDispose = () => {}
 
@@ -135,6 +133,7 @@ function mountEditor() {
             render()
         },
     })
+    registerShareButton(() => editorInstance.getValue())
 }
 
 window.addEventListener('DOMContentLoaded', () => {
