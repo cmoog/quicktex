@@ -15,6 +15,12 @@ body {
     height: 100%;
 }
 
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
 .header {
     background-color: rgb(31, 41, 55);
     display: flex;
@@ -94,4 +100,16 @@ body {
 
 #checkboxVimLabel {
     margin-right: 5px;
+}
+
+.credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 15px;
+    p {
+        margin: 3px 0;
+    }
 }

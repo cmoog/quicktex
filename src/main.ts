@@ -5,6 +5,7 @@ import { initVimMode } from 'monaco-vim'
 import completions from '../scripts/completions.json'
 import { registerOptionsInputs } from './options'
 import languageConfig from './languageConfiguration.json'
+import famousEquations from './famousEquations.json'
 import { clearHash, extractDataFromUrl, registerShareButton } from './url'
 
 const language = 'latex'
@@ -61,6 +62,12 @@ function trimDollar(str: string): string {
     return str
 }
 
+function randomizeInitialValue(): string {
+    const equn =
+        famousEquations[Math.floor(Math.random() * famousEquations.length)]
+    return `% ${equn.name}\n${equn.formula}\n\n`
+}
+
 function mountEditor() {
     let editorDirty = false
     languages.register({ id: language })
@@ -96,8 +103,7 @@ function mountEditor() {
     const errorElementId = 'parseErrorMessage'
     let inlineMode = false
 
-    const defaultEditorValue = 'e^{i\\pi} + 1 = 0\n\n\n\n'
-    const initialValue = extractDataFromUrl() || defaultEditorValue
+    const initialValue = extractDataFromUrl() || randomizeInitialValue()
 
     editorInstance.onDidChangeModelContent(() => {
         if (editorInstance.getValue() !== initialValue) {
