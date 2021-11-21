@@ -1,31 +1,31 @@
 {
-    "comments": {
-        "lineComment": "%"
-    },
-    "brackets": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"],
-        ["\\left(", "\\right)"],
-        ["\\left(", "\\right."],
-        ["\\left.", "\\right)"],
-        ["\\left[", "\\right]"],
-        ["\\left[", "\\right."],
-        ["\\left.", "\\right]"],
-        ["\\left\\{", "\\right\\}"],
-        ["\\left\\{", "\\right."],
-        ["\\left.", "\\right\\}"],
-        ["\\left<", "\\right>"]
-    ],
-    "surroundingPairs": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"]
-    ],
-    "indentationRules": {
-        "increaseIndentPattern": "\\\\begin{(?!document)([^}]*)}(?!.*\\\\end{\\1})",
-        "decreaseIndentPattern": "^\\s*\\\\end{(?!document)"
-    },
-    "autoCloseBefore": ";:.,=}])>\\` \n\t$",
-    "wordPattern": "(__)|(\\*\\*)|(\\.\\.\\.)|([^\\s`'\"~_!?|$#@%^&*\\-=+;:,.<>(){}[\\]\\\\\\/]{2,})"
+  "comments": {
+    "lineComment": "%"
+  },
+  "brackets": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"],
+    ["\\left(", "\\right)"],
+    ["\\left(", "\\right."],
+    ["\\left.", "\\right)"],
+    ["\\left[", "\\right]"],
+    ["\\left[", "\\right."],
+    ["\\left.", "\\right]"],
+    ["\\left\\{", "\\right\\}"],
+    ["\\left\\{", "\\right."],
+    ["\\left.", "\\right\\}"],
+    ["\\left<", "\\right>"]
+  ],
+  "surroundingPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"]
+  ],
+  "indentationRules": {
+    "increaseIndentPattern": "\\\\begin{(?!document)([^}]*)}(?!.*\\\\end{\\1})",
+    "decreaseIndentPattern": "^\\s*\\\\end{(?!document)"
+  },
+  "autoCloseBefore": ";:.,=}])>\\` \n\t$",
+  "wordPattern": "(__)|(\\*\\*)|(\\.\\.\\.)|([^\\s`'\"~_!?|$#@%^&*\\-=+;:,.<>(){}[\\]\\\\\\/]{2,})"
 }

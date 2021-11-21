@@ -1,115 +1,113 @@
 html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    font-family: 'Computer Modern Sans', sans-serif;
-    font-size: 1.1em;
-    font-feature-settings: 'kern' 1;
-    font-kerning: normal;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  margin: 0;
+  font-family: "Computer Modern Sans", sans-serif;
+  font-size: 1.1em;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 input,
 textarea,
 button {
-    font-family: inherit;
+  font-family: inherit;
 }
 
 .header {
-    background-color: rgb(31, 41, 55);
-    display: flex;
-    padding: 5px 20px;
-    color: white;
-    fill: white;
-    justify-content: space-between;
-    align-items: center;
-    h1 {
-        margin: 0.75rem 0;
-    }
+  background-color: rgb(31, 41, 55);
+  display: flex;
+  padding: 5px 20px;
+  color: white;
+  fill: white;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    margin: 0.75rem 0;
+  }
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(229, 231, 235);
-    padding: 40px 20px 10px;
-    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(229, 231, 235);
+  padding: 40px 20px 10px;
+  flex-grow: 1;
 }
 
 #editor {
-    height: 300px;
-    width: 100%;
-    max-width: 700px;
+  height: 300px;
+  width: 100%;
+  max-width: 700px;
 
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-        rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  background-color: white;
 }
 
 #mathPreview {
-    background-color: white;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-        rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    padding: 10px;
-    margin-top: 30px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 10px;
+  margin-top: 30px;
 
-    width: 100%;
-    // TODO: fix this, wrap in another container
-    max-width: 700px;
+  width: 100%;
+  // TODO: fix this, wrap in another container
+  max-width: 700px;
 
-    font-size: 20px;
+  font-size: 20px;
 }
 
 #parseErrorMessage {
-    padding: 5px;
-    text-align: center;
-    background-color: rgba(205, 66, 70, 0.1);
-    color: rgb(172, 47, 51);
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(205, 66, 70, 0.1);
+  color: rgb(172, 47, 51);
 }
 
 .toolbar {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    max-width: 720px;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  max-width: 720px;
+  width: 100%;
 
-    button,
-    input {
-        cursor: pointer;
-    }
+  button,
+  input {
+    cursor: pointer;
+  }
 }
 
 .optionsContainer {
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #checkboxVimLabel {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .credits {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-grow: 1;
-    text-align: center;
-    margin-top: 15px;
-    p {
-        margin: 3px 0;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+  text-align: center;
+  margin-top: 15px;
+  p {
+    margin: 3px 0;
+  }
 }

@@ -1,22 +1,22 @@
 [
-    {
-        "name": "Philips curve relationship",
-        "formula": "\\pi_t = \\pi^\\theta - \\beta(u_t-u_n)"
-    },
-    {
-        "name": "Euler's Identity",
-        "formula": "e^{i\\pi} + 1 = 0"
-    },
-    {
-        "name": "Kepler's Law of Periods",
-        "formula": "T^2 = \\frac{4\\pi^2}{G(M_1 + M_2)}a^3"
-    },
-    {
-        "name": "Lorentz factor: Special Relativity",
-        "formula": "\\gamma=\\frac{1}{\\sqrt{1-\\frac{v^2}{c^2}}}=\\frac{dt}{d\\tau}"
-    },
-    {
-        "name": "Relativistic kinetic energy",
-        "formula": "E_k=E-E_0=(\\gamma-1)m_0c^2"
-    }
+  {
+    "name": "Euler's identity",
+    "formula": "e^{i\\pi} + 1 = 0"
+  },
+  {
+    "name": "Philips curve relationship",
+    "formula": "\\pi_t = \\pi^\\theta - \\beta(u_t-u_n)"
+  },
+  {
+    "name": "Kepler's Law of Periods",
+    "formula": "T^2 = \\frac{4\\pi^2}{G(M_1 + M_2)}a^3"
+  },
+  {
+    "name": "Lorentz factor: Special Relativity",
+    "formula": "\\gamma=\\frac{1}{\\sqrt{1-\\frac{v^2}{c^2}}}=\\frac{dt}{d\\tau}"
+  },
+  {
+    "name": "Relativistic kinetic energy",
+    "formula": "E_k=E-E_0=(\\gamma-1)m_0c^2"
+  }
 ]
