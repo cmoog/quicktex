@@ -1,4 +1,4 @@
-# latexpad.dev
+# quicktex.dev
 
 A minimalist LaTeX scratch pad with symbol autocompletion and instant previews.
 
