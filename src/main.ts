@@ -1,6 +1,6 @@
 import katex from "katex";
 import { languages, editor } from "monaco-editor";
-import { initVimMode } from "monaco-vim";
+import { initVimMode, VimMode } from "monaco-vim";
 
 import completions from "../scripts/completions.json";
 import { registerOptionsInputs } from "./options";
@@ -9,6 +9,10 @@ import famousEquations from "./famousEquations.json";
 import { clearHash, extractDataFromUrl, registerShareButton } from "./url";
 
 const language = "latex";
+
+// a _very_ common configuration option (and the personal preference of @cmoog)
+VimMode.Vim.map("jk", "<Esc>", "insert");
+VimMode.Vim.map("jj", "<Esc>", "insert");
 
 function provideCompletionItems(model, pos, ctx) {
   const word = model.getWordUntilPosition(pos);
@@ -144,6 +148,7 @@ function mountEditor() {
       render();
     },
   });
+
   registerShareButton(() => editorInstance.getValue());
 
   // warn that editor contents will be reset during reload
