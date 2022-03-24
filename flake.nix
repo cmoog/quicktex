@@ -1,7 +1,7 @@
 {
-  description = "My personal website served from cmoog.io and charliemoog.com.";
+  description = "A no-frills LaTeX preview editor served from quicktex.dev.";
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
