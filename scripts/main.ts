@@ -1,3 +1,5 @@
+#!/usr/bin/env -S deno run --unstable --allow-net=raw.githubusercontent.com --allow-write=./
+
 import { Marked } from "https://deno.land/x/markdown@v2.0.0/mod.ts";
 import { DOMParser } from "https://deno.land/x/deno_dom/deno-dom-wasm.ts";
 
@@ -27,6 +29,4 @@ const rows = tables
   })
   .filter((row) => row);
 
-console.log(JSON.stringify(rows));
-
-// deno run -A --unstable main.ts > completions.json
+await Deno.writeTextFile("./completions.json", JSON.stringify(rows));

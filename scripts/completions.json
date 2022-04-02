@@ -87,37 +87,17 @@
     "rendered": "$\\text{\\^{a}}$",
     "comment": "\\text{\\\\^{a}}"
   },
-  {
-    "symbol": "\\AA",
-    "rendered": "$\\text{\\AA}$",
-    "comment": "\\text{\\AA}"
-  },
-  {
-    "symbol": "\\aa",
-    "rendered": "$\\text{\\aa}$",
-    "comment": "\\text{\\aa}"
-  },
+  { "symbol": "\\AA", "rendered": "$\\text{\\AA}$", "comment": "\\text{\\AA}" },
+  { "symbol": "\\aa", "rendered": "$\\text{\\aa}$", "comment": "\\text{\\aa}" },
   {
     "symbol": "\\above",
     "rendered": "${a \\above{2pt} b+1}$",
     "comment": "{a \\above{2pt} b+1}"
   },
-  {
-    "symbol": "\\abovewithdelims",
-    "rendered": "Not supported",
-    "comment": ""
-  },
+  { "symbol": "\\abovewithdelims", "rendered": "Not supported", "comment": "" },
   { "symbol": "\\acute", "rendered": "$\\acute e$", "comment": "\\acute e" },
-  {
-    "symbol": "\\AE",
-    "rendered": "$\\text{\\AE}$",
-    "comment": "\\text{\\AE}"
-  },
-  {
-    "symbol": "\\ae",
-    "rendered": "$\\text{\\ae}$",
-    "comment": "\\text{\\ae}"
-  },
+  { "symbol": "\\AE", "rendered": "$\\text{\\AE}$", "comment": "\\text{\\AE}" },
+  { "symbol": "\\ae", "rendered": "$\\text{\\ae}$", "comment": "\\text{\\ae}" },
   { "symbol": "\\alef", "rendered": "$\\alef$", "comment": "" },
   { "symbol": "\\alefsym", "rendered": "$\\alefsym$", "comment": "" },
   { "symbol": "\\aleph", "rendered": "$\\aleph$", "comment": "" },
@@ -334,11 +314,7 @@
     "rendered": "$\\binom n k$",
     "comment": "\\binom n k"
   },
-  {
-    "symbol": "\\blacklozenge",
-    "rendered": "$\\blacklozenge$",
-    "comment": ""
-  },
+  { "symbol": "\\blacklozenge", "rendered": "$\\blacklozenge$", "comment": "" },
   { "symbol": "\\blacksquare", "rendered": "$\\blacksquare$", "comment": "" },
   {
     "symbol": "\\blacktriangle",
@@ -503,11 +479,7 @@
     "comment": "\\def\\foo{a}\\edef\\bar{\\foo}\\def\\foo{}\\bar"
   },
   { "symbol": "\\ell", "rendered": "$\\ell$", "comment": "" },
-  {
-    "symbol": "\\else",
-    "rendered": "Not supported",
-    "comment": "Issue #1003"
-  },
+  { "symbol": "\\else", "rendered": "Not supported", "comment": "Issue #1003" },
   { "symbol": "\\em", "rendered": "Not supported", "comment": "" },
   { "symbol": "\\emph", "rendered": "Not supported", "comment": "" },
   { "symbol": "\\empty", "rendered": "$\\empty$", "comment": "" },
@@ -552,11 +524,7 @@
   { "symbol": "{eqnarray}", "rendered": "Not supported", "comment": "" },
   { "symbol": "\\Eqqcolon", "rendered": "$\\Eqqcolon$", "comment": "" },
   { "symbol": "\\eqqcolon", "rendered": "$\\eqqcolon$", "comment": "" },
-  {
-    "symbol": "\\eqref",
-    "rendered": "Not supported",
-    "comment": "Issue #350"
-  },
+  { "symbol": "\\eqref", "rendered": "Not supported", "comment": "Issue #350" },
   { "symbol": "\\eqsim", "rendered": "$\\eqsim$", "comment": "" },
   { "symbol": "\\eqslantgtr", "rendered": "$\\eqslantgtr$", "comment": "" },
   { "symbol": "\\eqslantless", "rendered": "$\\eqslantless$", "comment": "" },
@@ -752,16 +720,8 @@
     "rendered": "$\\htmlStyle{color: red;}{x}$",
     "comment": "\\htmlStyle{color: red;}{x} Must enable trust and disable strict option"
   },
-  {
-    "symbol": "\\huge",
-    "rendered": "$\\huge huge$",
-    "comment": "\\huge huge"
-  },
-  {
-    "symbol": "\\Huge",
-    "rendered": "$\\Huge Huge$",
-    "comment": "\\Huge Huge"
-  },
+  { "symbol": "\\huge", "rendered": "$\\huge huge$", "comment": "\\huge huge" },
+  { "symbol": "\\Huge", "rendered": "$\\Huge Huge$", "comment": "\\Huge Huge" },
   { "symbol": "\\i", "rendered": "$\\text{\\i}$", "comment": "\\text{\\i}" },
   { "symbol": "\\idotsint", "rendered": "Not supported", "comment": "" },
   {
@@ -776,11 +736,7 @@
     "rendered": "Not supported",
     "comment": "Issue #1003"
   },
-  {
-    "symbol": "\\ifx",
-    "rendered": "Not supported",
-    "comment": "Issue #1003"
-  },
+  { "symbol": "\\ifx", "rendered": "Not supported", "comment": "Issue #1003" },
   { "symbol": "\\iiiint", "rendered": "Not supported", "comment": "" },
   { "symbol": "\\iiint", "rendered": "$\\iiint$", "comment": "" },
   { "symbol": "\\iint", "rendered": "$\\iint$", "comment": "" },
@@ -1075,11 +1031,7 @@
     "rendered": "$a + (b\\mathclose\\gt + c$",
     "comment": "a + (b\\mathclose\\gt + c"
   },
-  {
-    "symbol": "\\mathellipsis",
-    "rendered": "$\\mathellipsis$",
-    "comment": ""
-  },
+  { "symbol": "\\mathellipsis", "rendered": "$\\mathellipsis$", "comment": "" },
   {
     "symbol": "\\mathfrak",
     "rendered": "$\\mathfrak{AaBb}$",
@@ -1155,11 +1107,7 @@
     "rendered": "$\\mathsf{AaBb123}$",
     "comment": "\\mathsf{AaBb123}"
   },
-  {
-    "symbol": "\\mathsterling",
-    "rendered": "$\\mathsterling$",
-    "comment": ""
-  },
+  { "symbol": "\\mathsterling", "rendered": "$\\mathsterling$", "comment": "" },
   {
     "symbol": "\\mathstrut",
     "rendered": "$\\sqrt{\\mathstrut a}$",
@@ -1219,11 +1167,7 @@
     "comment": ""
   },
   { "symbol": "\\minuso", "rendered": "$\\minuso$", "comment": "" },
-  {
-    "symbol": "\\mit",
-    "rendered": "Not supported",
-    "comment": "See \\mathit"
-  },
+  { "symbol": "\\mit", "rendered": "Not supported", "comment": "See \\mathit" },
   {
     "symbol": "\\mkern",
     "rendered": "$a\\mkern18mu b$",
@@ -1394,16 +1338,8 @@
   { "symbol": "\\O", "rendered": "$\\text{\\O}$", "comment": "\\text{\\O}" },
   { "symbol": "\\o", "rendered": "$\\text{\\o}$", "comment": "\\text{\\o}" },
   { "symbol": "\\odot", "rendered": "$\\odot$", "comment": "" },
-  {
-    "symbol": "\\OE",
-    "rendered": "$\\text{\\OE}$",
-    "comment": "\\text{\\OE}"
-  },
-  {
-    "symbol": "\\oe",
-    "rendered": "$\\text{\\oe}$",
-    "comment": "\\text{\\oe}"
-  },
+  { "symbol": "\\OE", "rendered": "$\\text{\\OE}$", "comment": "\\text{\\OE}" },
+  { "symbol": "\\oe", "rendered": "$\\text{\\oe}$", "comment": "\\text{\\oe}" },
   { "symbol": "\\officialeuro", "rendered": "Not supported", "comment": "" },
   { "symbol": "\\oiiint", "rendered": "$\\oiiint$", "comment": "" },
   { "symbol": "\\oiint", "rendered": "$\\oiint$", "comment": "" },
@@ -1500,11 +1436,7 @@
     "rendered": "$\\overset{!}{=}$",
     "comment": "\\overset{!}{=}"
   },
-  {
-    "symbol": "\\overwithdelims",
-    "rendered": "Not supported",
-    "comment": ""
-  },
+  { "symbol": "\\overwithdelims", "rendered": "Not supported", "comment": "" },
   { "symbol": "\\P", "rendered": "$\\text{\\P}$", "comment": "\\text{\\P}" },
   {
     "symbol": "\\pagecolor",
@@ -1512,11 +1444,7 @@
     "comment": "Deprecated"
   },
   { "symbol": "\\parallel", "rendered": "$\\parallel$", "comment": "" },
-  {
-    "symbol": "\\part",
-    "rendered": "Not supported",
-    "comment": "Deprecated"
-  },
+  { "symbol": "\\part", "rendered": "Not supported", "comment": "Deprecated" },
   { "symbol": "\\partial", "rendered": "$\\partial$", "comment": "" },
   { "symbol": "\\perp", "rendered": "$\\perp$", "comment": "" },
   {
@@ -1553,11 +1481,7 @@
     "rendered": "$\\begin{pmatrix}[r]0&-1\\-1&0\\end{pmatrix}$",
     "comment": "\\begin{pmatrix*}[r]   0 & -1 \\\\   -1 & 0\\end{pmatrix*}"
   },
-  {
-    "symbol": "\\pmb",
-    "rendered": "$\\pmb{\\mu}$",
-    "comment": "\\pmb{\\mu}"
-  },
+  { "symbol": "\\pmb", "rendered": "$\\pmb{\\mu}$", "comment": "\\pmb{\\mu}" },
   { "symbol": "\\pmod", "rendered": "$x\\pmod a$", "comment": "x\\pmod a" },
   { "symbol": "\\pod", "rendered": "$x \\pod a$", "comment": "x \\pod a" },
   { "symbol": "\\pounds", "rendered": "$\\pounds$", "comment": "" },
@@ -1572,11 +1496,7 @@
   { "symbol": "\\precsim", "rendered": "$\\precsim$", "comment": "" },
   { "symbol": "\\prime", "rendered": "$\\prime$", "comment": "" },
   { "symbol": "\\prod", "rendered": "$\\prod$", "comment": "" },
-  {
-    "symbol": "\\projlim",
-    "rendered": "$\\projlim$",
-    "comment": "\\projlim"
-  },
+  { "symbol": "\\projlim", "rendered": "$\\projlim$", "comment": "\\projlim" },
   { "symbol": "\\propto", "rendered": "$\\propto$", "comment": "" },
   {
     "symbol": "\\providecommand",
@@ -1710,11 +1630,7 @@
     "rendered": "$\\rightthreetimes$",
     "comment": ""
   },
-  {
-    "symbol": "\\risingdotseq",
-    "rendered": "$\\risingdotseq$",
-    "comment": ""
-  },
+  { "symbol": "\\risingdotseq", "rendered": "$\\risingdotseq$", "comment": "" },
   {
     "symbol": "\\rlap",
     "rendered": "$\\rlap{\\,/}{=}$",
@@ -1734,11 +1650,7 @@
   { "symbol": "\\Rrightarrow", "rendered": "$\\Rrightarrow$", "comment": "" },
   { "symbol": "\\Rsh", "rendered": "$\\Rsh$", "comment": "" },
   { "symbol": "\\rtimes", "rendered": "$\\rtimes$", "comment": "" },
-  {
-    "symbol": "\\Rule",
-    "rendered": "Not supported",
-    "comment": "see \\rule"
-  },
+  { "symbol": "\\Rule", "rendered": "Not supported", "comment": "see \\rule" },
   {
     "symbol": "\\rule",
     "rendered": "$x\\rule[6pt]{2ex}{1ex}x$",
@@ -1784,11 +1696,7 @@
     "comment": "Issue #687"
   },
   { "symbol": "\\setminus", "rendered": "$\\setminus$", "comment": "" },
-  {
-    "symbol": "\\sf",
-    "rendered": "$\\sf AaBb123$",
-    "comment": "\\sf AaBb123"
-  },
+  { "symbol": "\\sf", "rendered": "$\\sf AaBb123$", "comment": "\\sf AaBb123" },
   { "symbol": "\\sharp", "rendered": "$\\sharp$", "comment": "" },
   { "symbol": "\\shortmid", "rendered": "$\\shortmid$", "comment": "" },
   {
@@ -1845,21 +1753,13 @@
   },
   { "symbol": "\\smile", "rendered": "$\\smile$", "comment": "" },
   { "symbol": "\\smiley", "rendered": "Not supported", "comment": "" },
-  {
-    "symbol": "\\sout",
-    "rendered": "$\\sout{abc}$",
-    "comment": "\\sout{abc}"
-  },
+  { "symbol": "\\sout", "rendered": "$\\sout{abc}$", "comment": "\\sout{abc}" },
   {
     "symbol": "\\Space",
     "rendered": "Not supported",
     "comment": "see \\space"
   },
-  {
-    "symbol": "\\space",
-    "rendered": "$a\\space b$",
-    "comment": "a\\space b"
-  },
+  { "symbol": "\\space", "rendered": "$a\\space b$", "comment": "a\\space b" },
   { "symbol": "\\spades", "rendered": "$\\spades$", "comment": "" },
   { "symbol": "\\spadesuit", "rendered": "$\\spadesuit$", "comment": "" },
   {
@@ -1884,11 +1784,7 @@
   { "symbol": "\\sqsubseteq", "rendered": "$\\sqsubseteq$", "comment": "" },
   { "symbol": "\\sqsupset", "rendered": "$\\sqsupset$", "comment": "" },
   { "symbol": "\\sqsupseteq", "rendered": "$\\sqsupseteq$", "comment": "" },
-  {
-    "symbol": "\\ss",
-    "rendered": "$\\text{\\ss}$",
-    "comment": "\\text{\\ss}"
-  },
+  { "symbol": "\\ss", "rendered": "$\\text{\\ss}$", "comment": "\\text{\\ss}" },
   {
     "symbol": "\\stackrel",
     "rendered": "$\\stackrel{!}{=}$",
@@ -2142,11 +2038,7 @@
     "rendered": "Not supported",
     "comment": ""
   },
-  {
-    "symbol": "\\tfrac",
-    "rendered": "$\\tfrac ab$",
-    "comment": "\\tfrac ab"
-  },
+  { "symbol": "\\tfrac", "rendered": "$\\tfrac ab$", "comment": "\\tfrac ab" },
   { "symbol": "\\tg", "rendered": "$\\tg$", "comment": "" },
   { "symbol": "\\th", "rendered": "$\\th$", "comment": "" },
   { "symbol": "\\therefore", "rendered": "$\\therefore$", "comment": "" },
@@ -2167,30 +2059,14 @@
   },
   { "symbol": "\\tilde", "rendered": "$\\tilde M$", "comment": "\\tilde M" },
   { "symbol": "\\times", "rendered": "$\\times$", "comment": "" },
-  {
-    "symbol": "\\Tiny",
-    "rendered": "Not supported",
-    "comment": "see \\tiny"
-  },
-  {
-    "symbol": "\\tiny",
-    "rendered": "$\\tiny tiny$",
-    "comment": "\\tiny tiny"
-  },
+  { "symbol": "\\Tiny", "rendered": "Not supported", "comment": "see \\tiny" },
+  { "symbol": "\\tiny", "rendered": "$\\tiny tiny$", "comment": "\\tiny tiny" },
   { "symbol": "\\to", "rendered": "$\\to$", "comment": "" },
   { "symbol": "\\toggle", "rendered": "Not supported", "comment": "" },
   { "symbol": "\\top", "rendered": "$\\top$", "comment": "" },
   { "symbol": "\\triangle", "rendered": "$\\triangle$", "comment": "" },
-  {
-    "symbol": "\\triangledown",
-    "rendered": "$\\triangledown$",
-    "comment": ""
-  },
-  {
-    "symbol": "\\triangleleft",
-    "rendered": "$\\triangleleft$",
-    "comment": ""
-  },
+  { "symbol": "\\triangledown", "rendered": "$\\triangledown$", "comment": "" },
+  { "symbol": "\\triangleleft", "rendered": "$\\triangleleft$", "comment": "" },
   {
     "symbol": "\\trianglelefteq",
     "rendered": "$\\trianglelefteq$",
@@ -2361,21 +2237,13 @@
   { "symbol": "\\varSigma", "rendered": "$\\varSigma$", "comment": "" },
   { "symbol": "\\varsigma", "rendered": "$\\varsigma$", "comment": "" },
   { "symbol": "\\varstigma", "rendered": "Not supported", "comment": "" },
-  {
-    "symbol": "\\varsubsetneq",
-    "rendered": "$\\varsubsetneq$",
-    "comment": ""
-  },
+  { "symbol": "\\varsubsetneq", "rendered": "$\\varsubsetneq$", "comment": "" },
   {
     "symbol": "\\varsubsetneqq",
     "rendered": "$\\varsubsetneqq$",
     "comment": ""
   },
-  {
-    "symbol": "\\varsupsetneq",
-    "rendered": "$\\varsupsetneq$",
-    "comment": ""
-  },
+  { "symbol": "\\varsupsetneq", "rendered": "$\\varsupsetneq$", "comment": "" },
   {
     "symbol": "\\varsupsetneqq",
     "rendered": "$\\varsupsetneqq$",
@@ -2427,11 +2295,7 @@
   { "symbol": "\\vert", "rendered": "$\\vert$", "comment": "" },
   { "symbol": "\\vfil", "rendered": "Not supported", "comment": "" },
   { "symbol": "\\vfill", "rendered": "Not supported", "comment": "" },
-  {
-    "symbol": "\\vline",
-    "rendered": "Not supported",
-    "comment": "Issue #269"
-  },
+  { "symbol": "\\vline", "rendered": "Not supported", "comment": "Issue #269" },
   {
     "symbol": "{Vmatrix}",
     "rendered": "$\\begin{Vmatrix}a&b\\c&d\\end{Vmatrix}$",
